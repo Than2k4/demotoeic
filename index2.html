@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css"/>
+    <script src="main.js"></script>
+    <title>Website Thi TOEIC</title>
+</head>
+<body>
+    <header>
+        <h1>Toeic Test</h1>
+        <nav>
+            <a href="#">Trang chủ</a>
+            <a href="#">Thi thử</a>
+            <a href="#">Tài liệu</a>
+            <a href="#">Thông tin</a>
+            <a href="#">Liên hệ</a>
+        </nav>
+        <div id="actions">
+            <div class="item" onclick="toggleForm()">
+                <h3 class="infor">Thông tin cá nhân</h3>
+                <img src="picture/ava1.png" alt="chưa có" width="35px" height="35gipx">
+            </div>
+            <div class="overlay" id="overlay" onclick="toggleForm()"></div>
+            <div class="form-popup" id="formPopup">
+                <span class="close-btn" onclick="toggleForm()">&times;</span>
+                <h3>Thông tin cá nhân</h3>
+                <form>
+                    <img src="picture/ava1.png" alt="alt" class="avata" width="60px"><br>
+                    <label for="name">Châu Văn Thân</label><br>
+                    <label>22110425</label><br>
+                    <label>thanchau.100100@gmail.com</label><br>
+                    <a href="index1.html" style="color: aliceblue;">Đăng xuất</a>
+                </form>
+            </div>
+        </div>
+    </header>
+    <div class="banner">
+        <h2>Chào mừng đến với trang thi TOEIC</h2>
+        <button onclick="startTest()">Bắt đầu thi thử</button>
+    </div>
+    <div class="container">
+        <div class="card">
+            <h3>Tài liệu học tập</h3>
+            <p>Các khóa học, bài viết và video hướng dẫn.</p>
+        </div>
+        <div class="card">
+            <h3>Đánh giá từ học viên</h3>
+            <p>"Trang web rất hữu ích cho việc ôn thi!"</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Địa chỉ: 123 Đường ABC, Thành phố XYZ</p>
+        <p>Số điện thoại: 0123456789 | Email: info@toeic.com</p>
+        <p>© 2024 Toeic Test. Tất cả quyền được bảo lưu.</p>
+    </footer>
+</body>
+</html>
